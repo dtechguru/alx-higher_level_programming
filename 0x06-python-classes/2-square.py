@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-#Dtechguru
+# Dtechguru
 # Class Square is defined here
 
-# Author: Dtechguru
+ # Author: Dtechguru
 class Square:
-# this should represent a square
+    # this should represent a square
 
     def __init__(self, size=0):
-# Dtechguru
+    # Dtechguru
         if not isinstance(size, int):
-            raise TypeError("size must be an integer") # Dtechguru
+            raise TypeError("size must be an integer")  # Dtechguru
         elif size < 0:
-            raise ValueError("size must be >= 0") # Dtechguru
+            raise ValueError("size must be >= 0")  # Dtechguru
         self.__size = size
 # Author: Dtechguru

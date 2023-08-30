@@ -4,19 +4,17 @@
 
 
 class Square:
-"""Author: Dtechguru"""
+    """Author: Dtechguru"""
     """Represent one square."""
-
     def __init__(self, size):
-        """Initialize one new square.
-
+        """Initialize one new square."""
 # Author: Dtechguru
-       self.size = size
+    self.size = size
 
     @property
 
     def size(self):
-        """Get/set the current size of the square."""
+    # Get/set the current size of the square.
         return (self.__size)
 
     @size.setter
@@ -27,13 +25,15 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-"""Author: Dtechguru"""
+    # Author: Dtechguru
     def area(self):
-        """Return the current area of the square."""
+        # Return the current area of the square.
         return (self.__size * self.__size)
-"""Author: Dtechguru"""
+        # Author: Dtechguru
     def my_print(self):
-        """Print the square with the # symb style here"""
+
+        """Print the square with the  # symb style here"""
+
         for i in range(0, self.__size):
             [print("#", end="") for j in range(self.__size)]
             print("")  """Author: Dtechguru"""
